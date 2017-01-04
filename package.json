@@ -1,0 +1,11 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "learn exress",
+  "main": "index.js",
+  "author": "hakim",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
