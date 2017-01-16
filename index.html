@@ -7,16 +7,4 @@
 <body>
 
 </body>
-<script src="./jquery.min.js"></script>
-<script>
-    $.ajax({
-        type:'get',
-        url:'localhost:3000/api/products'
-    }).done(function(res){
-        console.log(res)
-    }).fail(function(err){
-        console.log(arguments);
-        console.log(err)
-    })
-</script>
 </html>
