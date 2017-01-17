@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
 </head>
 <body>
 
 </body>
+<script>
+    if (!(Object.setPrototypeOf || {}.__proto__)) {
+        var nativeGetPrototypeOf = Object.getPrototypeOf;
+
+        Object.getPrototypeOf = function (object) {
+            if (object.__proto__) {
+                return object.__proto__;
+            } else {
+                return nativeGetPrototypeOf.call(Object, object);
+            }
+        }
+    }
+
+</script>
+<script src="./jquery.js"></script>
+<script>
+    $.ajax({
+        url:'localhost:3000/api/product'
+    }).done(function(res){
+        console.log(res)
+    }).fail(function(err){
+        console.log(err)
+    })
+</script>
 </html>

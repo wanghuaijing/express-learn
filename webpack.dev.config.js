@@ -5,9 +5,10 @@ var webpack = require('webpack');
 var webpackBaseConfig = require('./webpack.base');
 var webpackBasePlugins = require('./webpack.plugins');
 var path = require('path');
-const config = require('./config')
-const config_dev = config.development
+const config = require('./config');
+const config_dev = config.development;
 var loaders = webpackBaseConfig.module.loaders.concat([]);
+
 
 var plugins = webpackBasePlugins.concat([
     new webpack.HotModuleReplacementPlugin()
@@ -20,6 +21,7 @@ module.exports = {
             .port}`, // WebpackDevServer host and port
         'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
         config.entry // Your appʼs entry point
+
     ],
     resolve: webpackBaseConfig.resolve,
     node: {
@@ -27,7 +29,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, config_dev.file),
-        filename: config_dev.file_name,
+        filename: config_dev?config_dev.file_name_hash:config_dev.file_name,
         publicPath: 'http://localhost:'+config_dev.port+
         config_dev.public_path+config_dev.file
     },

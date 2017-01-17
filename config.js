@@ -6,7 +6,9 @@ let config = {
         port:3000,
         file_name:'bundle.js',
         public_path:'/',
-        file:'public'
+        file:'public',
+        hash:true,
+        file_name_hash:'bundle.[hash].js'
     },
     client:'myapp',
     entry:'./myapp/index.js',
