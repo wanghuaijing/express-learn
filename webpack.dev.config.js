@@ -1,4 +1,4 @@
-1/**
+/**
  * 开发环境配置
  */
 var webpack = require('webpack');

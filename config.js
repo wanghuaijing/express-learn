@@ -10,8 +10,8 @@ let config = {
         hash:true,
         file_name_hash:'bundle.[hash].js'
     },
-    client:'myapp',
-    entry:'./myapp/index.js',
+    client:'react',
+    entry:'./react/index.js',
     env:process.env.NODE_ENV === 'production'?'production':'development',
     resolve_root:['./myapp'],
 

@@ -1926,6 +1926,10 @@ punycode@^1.4.1:
   version "1.4.1"
   resolved "http://registry.npm.taobao.org/punycode/download/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
+q@^1.4.1:
+  version "1.4.1"
+  resolved "http://registry.npm.taobao.org/q/download/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"
+
 qs@6.2.0:
   version "6.2.0"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
