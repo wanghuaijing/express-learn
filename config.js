@@ -13,7 +13,7 @@ let config = {
     client:'myapp',
     entry:'./myapp/index.js',
     env:process.env.NODE_ENV === 'production'?'production':'development',
-    resolve_root:['./myapp'],
+    resolve_root:['./myapp','./myapp/web'],
 
     production:{
         file_name:'[name].[chunkhash].js',
