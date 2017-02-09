@@ -3,17 +3,18 @@
  */
 let config = {
     development:{
-        port:3000,
+        port:4000,
         file_name:'bundle.js',
         public_path:'/',
         file:'public',
         hash:true,
-        file_name_hash:'bundle.[hash].js'
+        file_name_hash:'bundle.js'
     },
+    port:3001,
     client:'react',
     entry:'./react/index.js',
     env:process.env.NODE_ENV === 'production'?'production':'development',
-    resolve_root:['./myapp'],
+    resolve_root:['./myapp','./myapp/web'],
 
     production:{
         file_name:'[name].[chunkhash].js',

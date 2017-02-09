@@ -4,24 +4,36 @@
 var express = require('express');
 var cors = require('cors')();
 var app = express();
+var config = require('../config.js')
 const path = require('path');
 const index = require('./view-router/index');
-
+const apis = require('./api');
+const bodyParser = require('body-parser');
+const multer = require('multer');
 var products = [
     { name: 'apple juice', description: 'good', price: 12.12 },
     { name: 'banana juice', description: 'just so sos', price: 4.50 }
 ];
+
+const createApi=(app,apis)=>{
+    for(var key in apis){
+        app.use('/api',apis[key])
+    }
+    return app
+};
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 app.use('/statics',express.static(path.join(__dirname, 'static')));
 
 app.use('/api',cors);
-app.get('/api/products', function(req, res) {
-    req.headers["Access-Control-Allow-Origin"] =  "*"
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.get('/api/products', (req, res)=> {
     res.json(products);
 });
+createApi(app,apis);
 //view
 app.use('/',index);
 
@@ -42,6 +54,7 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
+app.listen(config.port)
 
 
 module.exports =  app;
