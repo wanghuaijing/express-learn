@@ -23,7 +23,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js?$/,
+                test: /\.jsx?$/,
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
@@ -39,7 +39,25 @@ module.exports = {
                     compact: false
                 }
             },
-            { test:  /\.json$/, loader: 'json-loader' }
+            {
+                test: /\.css$/, // Only .css files
+                loader: "style!css"
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot|svg)/,
+                loader: 'url'
+            },
+            {
+                test: /\.scss$/,
+                loader: "style-loader!css-loader!sass-loader"
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                loader: "url-loader?limit=10240"
+            },
+            {
+                test: /\.swf$/, loader: "file"
+            }
         ]
     }
 };

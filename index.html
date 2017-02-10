@@ -8,7 +8,7 @@
     <meta name="renderer" content="webkit">
 </head>
 <body>
-
+<div id="test"></div>
 </body>
 <script>
     if (!(Object.setPrototypeOf || {}.__proto__)) {
@@ -24,15 +24,21 @@
     }
 
 </script>
-<script src="jquery.js"></script>
-<script src="public/bundle.js>"></script>
+<script src="public/bundle.js"></script>
+<script src="./jquery.js"></script>
 <script>
-    $.ajax({
-        url:'http://localhost:3000/api/products'
-    }).done(function(res){
-        console.log(res)
-    }).fail(function(err){
-        console.log(err)
-    })
+    var $a = document.createElement('a');
+    $a.download = "echarts.png";
+    $a.target = '_blank';
+    //$a.href = 'base64'
+    //$a.href = "www.baidu.com"
+    var evt = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: false
+    });
+    $a.dispatchEvent(evt);
+/*    var $test = $('#test');
+    $test.append($($a).text('test'));*/
 </script>
 </html>
