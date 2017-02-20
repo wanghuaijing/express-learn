@@ -1,8 +1,8 @@
 /**
  * webpack通用插件
  */
-var config = require('./config')
-var webpack = require('webpack');
+const config = require('./config')
+const webpack = require('webpack');
 module.exports = [
     new webpack.DefinePlugin({
         'process.env'  : {

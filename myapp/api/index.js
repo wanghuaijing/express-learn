@@ -2,11 +2,13 @@
  * Created by whj57 on 2017/1/18.
  */
 const user = require('./user')
-const account = require('./account');
+const account = require('./account')
+const test = require('./test')
 
 const apis = {
     user,
-    account
-};
+    account,
+    test
+}
 
-module.exports =  apis;
+module.exports =  apis

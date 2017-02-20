@@ -14,13 +14,13 @@
                 })
                 .fail(err => {
                     promise.reject(err)
-                });
+                })
             return{
                 request:ajax,
                 promise:promise.promise
-            };
-        };
-        var registerRequest = (apis)=>apis.map((api,index)=>{
+            }
+        }
+        var registerRequest = (apis) => apis.map((api,index)=>{
             if(api.isTest){
                 let apiRequest = ajax(api.config);
                 return apiRequest;

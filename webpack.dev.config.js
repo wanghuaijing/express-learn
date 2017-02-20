@@ -1,15 +1,15 @@
 /**
  * 开发环境配置
  */
-var webpack = require('webpack');
-var webpackBaseConfig = require('./webpack.base');
-var webpackBasePlugins = require('./webpack.plugins');
-var path = require('path');
+const webpack = require('webpack');
+const webpackBaseConfig = require('./webpack.base');
+const webpackBasePlugins = require('./webpack.plugins');
+const path = require('path');
 const config = require('./config');
 const config_dev = config.development;
-var loaders = webpackBaseConfig.module.loaders.concat([]);
-var debug  = require('./debug.js')('debug.txt')
-var plugins = webpackBasePlugins.concat([
+let loaders = webpackBaseConfig.module.loaders.concat([]);
+const debug  = require('./debug.js')('debug.txt')
+let plugins = webpackBasePlugins.concat([
     new webpack.HotModuleReplacementPlugin()
 ]);
 debug('http://localhost:'+config_dev.port+ config_dev.public_path + config_dev.file);

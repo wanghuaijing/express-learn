@@ -2,12 +2,12 @@
  * webpack 基本配置
  */
 
-var webpack = require('webpack');
-var path = require('path');
-var config = require('./config')
-var node_modules = path.join(__dirname, 'node_modules');
-var fs = require('fs');
-var nodeModules = {};
+const webpack = require('webpack');
+const path = require('path');
+let config = require('./config')
+const node_modules = path.join(__dirname, 'node_modules');
+const fs = require('fs');
+let nodeModules = {};
 
 // note the path.resolve(__dirname, ...) part
 // without it, eslint-import-resolver-webpack fails

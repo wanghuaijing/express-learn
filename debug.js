@@ -6,7 +6,7 @@ var fs = require('fs');
 var moment = require('moment')
 var data = '';
 
-const debug = (path)=>(info)=>{
+const debug = (path) => (info) => {
     var rs = fs.createReadStream(path);
     if(global.debugReadData){
         debugReadData += moment(new Date()).format('YYYY-MM-DD HH:mm:ss')+':'+ info +' \n ';
@@ -15,7 +15,7 @@ const debug = (path)=>(info)=>{
             +' \n'+ moment(new Date()).format('YYYY-MM-DD HH:mm:ss')+':'+ info +' \n';
         rs.on("data", function (trunk){
             debugReadData += trunk;
-        });
+        })
     }
     rs.on("end", function () {
         fs.writeFile(path,debugReadData,{flags:'a+'},(err)=>{
@@ -23,9 +23,9 @@ const debug = (path)=>(info)=>{
                 console.log(err)
             }
         })
-    });
+    })
 
-};
+}
 
 
 

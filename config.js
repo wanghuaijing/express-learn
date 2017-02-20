@@ -12,7 +12,7 @@ let config = {
     },
     port:3001,
     client:'react',
-    entry:'./react/index.js',
+    entry:'./react/index',
     env:process.env.NODE_ENV === 'production'?'production':'development',
     resolve_root:['./myapp','./myapp/web'],
 
@@ -20,6 +20,11 @@ let config = {
         file_name:'[name].[chunkhash].js',
         public_path:'./',
         file:'dist'
-    }
+    },
+    db:{
+        port:27017,
+        url:'localhost'
+    },
+
 };
 module.exports = config;
