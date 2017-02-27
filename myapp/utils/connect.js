@@ -6,7 +6,7 @@ var config = require('../../config')
 const debug  = require('../../debug')('debug.txt')
 module.exports = () => {
     const url = 'mongodb://' +  config.db.url + '/:' + config.db.port
-    debug(url)
+    mongoose.Promise = require('q').makePromise
     mongoose.connect(url)
     let db = mongoose.connection
     db.on('open', (cb) => {

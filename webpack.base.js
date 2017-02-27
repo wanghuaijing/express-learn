@@ -17,13 +17,16 @@ fs.readdirSync(path.resolve(__dirname, 'node_modules'))
     .forEach(mod => { nodeModules[mod] = `commonjs ${mod}`; });
 module.exports = {
     resolve: {
-        root: config.resolve_root
+        root: config.resolve_root,
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
     },
     externals: nodeModules,
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
                 query: {
@@ -37,6 +40,29 @@ module.exports = {
                         }] ],
                     presets: [ "es2015"],
                     compact: false
+                }
+            },
+            {
+                test: /\.vue$/,
+                exclude: /(node_modules)/,
+                loader: 'vue',
+                query: {
+                    //babel插件
+                    plugins: [["transform-object-assign"],
+                        ["transform-runtime", {
+                            "helpers": false,
+                            "polyfill": true,
+                            "regenerator": true,
+                            "moduleName": "babel-runtime"
+                        }] ],
+                    presets: [ "es2015"],
+                    compact: false
+                },
+                options:{
+                    loaders:{
+                        scss: 'vue-style-loader!css-loader!sass-loader', // <style lang="scss">
+                        sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax' // <style lang="sass">
+                    }
                 }
             },
             {

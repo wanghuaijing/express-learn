@@ -8,16 +8,7 @@ const router = express.Router()
 router.post('/test', (req, res) => {
     let testObj = req.body
     let fluffy = new TestModel(testObj)
-    fluffy.save((err, fluffy) => {
-        if(err) {
-            return res.json({
-                state:-1
-            })
-        } else {
-            return res.json({
-                state:200
-            })
-        }
-    })
+
+    fluffy.save()
 })
 module.exports = router

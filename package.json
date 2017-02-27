@@ -33,12 +33,16 @@
     "url-loader": "^0.5.7",
     "vhost": "^3.0.2",
     "vue": "^2.1.10",
+    "vue-cli": "^2.8.1",
+    "vue-hot-reload-api": "^2.0.10",
+    "vue-router": "^2.2.1",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.15.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
+    "vue-loader": "^11.1.2",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }

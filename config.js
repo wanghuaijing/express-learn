@@ -11,8 +11,8 @@ let config = {
         file_name_hash:'bundle.js'
     },
     port:3001,
-    client:'react',
-    entry:'./react/index',
+    client:'vue',
+    entry:'./vue/index',
     env:process.env.NODE_ENV === 'production'?'production':'development',
     resolve_root:['./myapp','./myapp/web'],
 

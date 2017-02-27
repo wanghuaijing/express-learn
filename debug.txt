@@ -1,3 +1,63 @@
+********2017-02-27********** 
+2017-02-27 11:07:52:http://localhost:4000/public 
+2017-02-27 11:07:52:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-27 11:07:52:bundle.js 
+ ********2017-02-27********** 
+2017-02-27 09:12:59:http://localhost:4000/public 
+2017-02-27 09:12:59:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-27 09:12:59:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 17:23:37:http://localhost:4000/public 
+2017-02-24 17:23:37:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 17:23:37:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 17:21:46:http://localhost:4000/public 
+2017-02-24 17:21:46:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 17:21:46:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 17:04:22:http://localhost:4000/public 
+2017-02-24 17:04:22:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 17:04:22:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 17:00:34:http://localhost:4000/public 
+2017-02-24 17:00:34:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 17:00:34:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 16:54:35:http://localhost:4000/public 
+2017-02-24 16:54:35:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 16:54:35:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 16:40:09:http://localhost:4000/public 
+2017-02-24 16:40:09:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 16:40:09:bundle.js 
+ ********2017-02-24********** 
+2017-02-24 16:35:50:http://localhost:4000/public 
+2017-02-24 16:35:50:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-24 16:35:50:bundle.js 
+ ********2017-02-21********** 
+2017-02-21 13:31:34:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 13:23:37:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 13:23:31:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 13:23:06:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 13:19:50:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 13:18:54:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 13:18:13:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 11:36:17:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 11:35:26:http://localhost:4000/public 
+2017-02-21 11:35:26:/Users/wanghuaijing92sina.com/WebstormProjects/work/express-learn/public 
+ 2017-02-21 11:35:26:bundle.js 
+ ********2017-02-21********** 
+2017-02-21 11:35:10:mongodb://localhost/:27017 
+********2017-02-21********** 
+2017-02-21 11:02:43:mongodb://localhost/:27017 
 ********2017-02-20********** 
 2017-02-20 16:55:57:mongodb://localhost/:27017 
 ********2017-02-20********** 
